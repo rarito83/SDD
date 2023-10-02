@@ -1,0 +1,6 @@
+framework module Pods_SDD {
+  umbrella header "Pods-SDD-umbrella.h"
+
+  export *
+  module * { export * }
+}
