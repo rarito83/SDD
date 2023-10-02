@@ -14,7 +14,7 @@
 		8D2C9AB42AC7E89100602296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D2C9AB32AC7E89100602296 /* Assets.xcassets */; };
 		8D2C9AC52AC900E200602296 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9AC42AC900E200602296 /* HomeViewController.swift */; };
 		8D2C9AC72AC900FA00602296 /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9AC62AC900FA00602296 /* PromoViewController.swift */; };
-		8D2C9AC92AC9010600602296 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9AC82AC9010500602296 /* ProfileViewController.swift */; };
+		8D2C9AC92AC9010600602296 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9AC82AC9010500602296 /* ScannerViewController.swift */; };
 		8D2C9B1B2AC9C74B00602296 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9B1A2AC9C74B00602296 /* HomePresenter.swift */; };
 		8D2C9B1D2AC9CC5100602296 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9B1C2AC9CC5100602296 /* HomeRouter.swift */; };
 		8D2C9B1F2AC9CF9200602296 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2C9B1E2AC9CF9200602296 /* HomeInteractor.swift */; };
@@ -40,7 +40,7 @@
 		8D2C9AB82AC7E89100602296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D2C9AC42AC900E200602296 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8D2C9AC62AC900FA00602296 /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
-		8D2C9AC82AC9010500602296 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8D2C9AC82AC9010500602296 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
 		8D2C9B1A2AC9C74B00602296 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		8D2C9B1C2AC9CC5100602296 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		8D2C9B1E2AC9CF9200602296 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		8D2C9AC02AC8015B00602296 /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				8D2C9AC32AC8FA9700602296 /* Profile */,
+				8D2C9AC32AC8FA9700602296 /* Scanner */,
 				8D2C9AC22AC8FA9000602296 /* Promo */,
 				8D2C9AC12AC8FA8900602296 /* Home */,
 			);
@@ -161,12 +161,12 @@
 			path = Promo;
 			sourceTree = "<group>";
 		};
-		8D2C9AC32AC8FA9700602296 /* Profile */ = {
+		8D2C9AC32AC8FA9700602296 /* Scanner */ = {
 			isa = PBXGroup;
 			children = (
-				8D2C9AC82AC9010500602296 /* ProfileViewController.swift */,
+				8D2C9AC82AC9010500602296 /* ScannerViewController.swift */,
 			);
-			path = Profile;
+			path = Scanner;
 			sourceTree = "<group>";
 		};
 		8D2C9B202AC9DFB400602296 /* Data */ = {
@@ -335,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D2C9AC92AC9010600602296 /* ProfileViewController.swift in Sources */,
+				8D2C9AC92AC9010600602296 /* ScannerViewController.swift in Sources */,
 				8D2C9B272AC9F5AB00602296 /* JsonUtil.swift in Sources */,
 				8D2C9B1D2AC9CC5100602296 /* HomeRouter.swift in Sources */,
 				8D2C9B242AC9DFFA00602296 /* JsonChart.swift in Sources */,
@@ -486,8 +486,7 @@
 				INFOPLIST_FILE = SDD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,8 +513,7 @@
 				INFOPLIST_FILE = SDD/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

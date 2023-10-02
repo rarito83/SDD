@@ -6,6 +6,7 @@ target 'SDD' do
   use_frameworks!
 
   # Pods for SDD
+	pod 'Firebase'
   	pod 'SDWebImage'
 	pod 'Charts'
 

@@ -18,13 +18,13 @@ class MainController: UITabBarController {
   
         let home = HomeViewController()
         let promo = PromoViewController()
-        let profile = ProfileViewController()
+        let scan = ScannerViewController()
         
         let homeNavController = setupNavController(unselectedImage: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "home.fill"), for: home)
         let promoNavController = setupNavController(unselectedImage: UIImage(systemName: "menucard"), selectedImage: UIImage(systemName: "menucard.fill"), for: promo)
-        let profileNavContrtoller = setupNavController(unselectedImage: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"), for: profile)
+        let scanNavController = setupNavController(unselectedImage: UIImage(systemName: "qrcode.viewfinder"), selectedImage: UIImage(systemName: "qrcode.viewfinder"), for: scan)
         
-        viewControllers = [homeNavController, promoNavController, profileNavContrtoller]
+        viewControllers = [homeNavController, promoNavController, scanNavController]
     
     }
 

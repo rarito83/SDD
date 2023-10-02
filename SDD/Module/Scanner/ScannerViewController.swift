@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  ScannerViewController.swift
 //  SDD
 //
 //  Created by Rahmat Susanto on 01/10/23.
@@ -8,7 +8,7 @@
 import UIKit
 import AVFoundation
 
-class ProfileViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
+class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
